@@ -1,0 +1,43 @@
+Menus:
+  - Name: "example" # Menu name instance, so we can load and manage it properly
+    Commands: # Commands to open this Menu
+      - "example"
+      - "exmpl"
+    Title: "Example Title" # Title of the Menu
+    Open_Sound: CHEST_OPEN
+    Rows: 3
+    Content:
+      - Slot: 10
+        Material: WOODEN_AXE
+        Name: "&aWooden Axe Button"
+        Amount: 1
+        Glow: false
+        Lore:
+          - " "
+          - "This is an example"
+          - "of lore in button."
+        Actions:
+          - "[close]"
+      - Slot: 11
+        Material: WOODEN_PICKAXE
+        Name: "&bWooden Pickaxe Button"
+        Amount: 3
+        Glow: true
+        Lore:
+          - " "
+          - "This is an example"
+          - "of lore in button."
+        Actions:
+          - "[player] gamemode creative"
+          - "[close]"
+    Info: # This is just dummy Info Button for the Menu
+      Slot: 18
+      Material: NETHER_STAR
+      Name: "&fMenu Information"
+      Lore:
+        - " "
+        - "&7This is an example"
+        - "&7of lore in info."
+    Fill:
+      Enabled: true
+      Material: GRAY_STAINED_GLASS_PANE
